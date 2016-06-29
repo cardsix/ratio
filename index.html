@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .wrap{
+            margin: 0 auto;
+            width: 80%;
+        }
+        .example{
+            font-size: 0;/* 去掉inline-block横向间距 */
+        }
+        .example a{
+            vertical-align: top;/* 去掉img底部空白 */
+        }
+    </style>
+    <!--<link type="image/*" href="loading.gif">-->
+    <title></title>
+</head>
+<body>
+<!--<img src="loading.gif" style="display: none;" />-->
+    <div class="wrap">
+        <h1>自定义比例缩放图片</h1>
+        <div class="example">
+            <a href="#" style=""><img _src="http://www.benbenla.cn/images/20120330/benbenla-04b.jpg" /></a>
+            <a href="#"><img _src="http://imgstore.cdn.sogou.com/app/a/11220002/4348_pc.jpg" /></a>
+            <a href="#"><img _src="http://www.deskcar.com/desktop/cartoon/china/2012317210314/17.jpg"></a>
+            <a href="#"><img _src="http://pic1.ooopic.com/uploadfilepic/sheying/2009-01-04/OOOPIC_z19870212_20090104b18ef5b046904933.jpg" /></a>
+            <a href="#"><img _src="http://5.26923.com/download/pic/000/245/718dfc8322abe39627591e4a495767af.jpg" /></a>
+            <a href="#"><img _src="http://img3.imgtn.bdimg.com/it/u=67352308,2479390457&fm=21&gp=0.jpg" /></a>
+            <a href="#"><img _src="http://rescdn.qqmail.com/dyimg/20140409/72B8663B7F23.jpg" /></a></a>
+            <a href="#"><img _src="http://img1.imgtn.bdimg.com/it/u=3602991495,3673804&fm=21&gp=0.jpg" /></a>
+        </div>
+    </div>
+</body>
+<!--<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" async></script>-->
+<script type="text/javascript" src="ratio.js"></script>
+
+<script type="text/javascript">
+//    window.onload = function(){
+        var images = document.querySelectorAll('.example img');
+        console.log(images);
+        var i = 0;
+        while(images[i]){
+//        console.log(i);
+            ratio(images[i]);
+            i++;
+        }
+//    }
+
+</script>
+
+</html>
